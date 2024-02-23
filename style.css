@@ -1,0 +1,71 @@
+.swiper-container .swiper-wrapper {
+    padding: 0 30px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card {
+    width: 300px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card img {
+    height: 300px;
+    width: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body h3 {
+    font-weight: 300;
+    text-align: center;
+    margin: 40px 0;
+    color: #B3A89F;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .card-text {
+    line-height: 30px;
+    color: #B3A89F;
+    /* height: 100px; */
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper {
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .dur {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 400px; */
+    color: #B3A89F;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .dur .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px grey solid;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper button {
+    border: 1px #B3A89F solid;
+    background: none;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.button-prev, .button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.button-next {
+    left: 100%;
+    transform: translateY(-100%)
+}
+
+.button-prev i,
+.button-next i {
+    font-size: 20px;
+}

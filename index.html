@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card Slider Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+        <style>
+            @font-face {
+                font-family: "helvetica";
+                src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+                    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+                    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+            }
+
+            body {
+                font-family: "helvetica", sans-serif;
+            }
+            
+            .swiper-container .swiper-wrapper {
+                padding: 0 30px;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card {
+                width: 300px;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card img {
+                height: 300px;
+                width: 250px;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body h3 {
+                font-weight: 300;
+                text-align: center;
+                margin: 40px 0;
+                color: #B3A89F;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .card-text {
+                line-height: 30px;
+                color: #B3A89F;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper {
+                display:  flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 400px;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .dur {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 550px;
+                color: #B3A89F;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .dur .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-top: 1px grey solid;
+                margin: 10px;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .card-body .body-wrapper .download-btn {
+                height: 500px;
+                margin-top: 100px;
+                position: relative;
+            }
+
+            .swiper-container .swiper-wrapper .swiper-slide .card .download-btn button {
+                border: 1px #B3A89F solid;
+                background: none;
+                width: 100%;
+                height: 50px;
+                margin: 100px auto 0 auto;
+            }
+
+            .button-prev, .button-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+
+            .button-next {
+                left: 100%;
+                transform: translateY(-100%)
+            }
+
+            .button-prev i,
+            .button-next i {
+                font-size: 20px;
+            }
+
+        </style>
+</head>
+
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uc560b0593a71d46dd616760a40d.previews.dropboxusercontent.com/p/thumb/ACKwoaH5oqMUGRXwucnngTwGkNCRCnaSxSAQWwr3dmiDMY2WGqOdF3AimRkFRlGm-EmCAzMoq_KYxXqnA6rSwu7hzK5N-ov-GG9NHRz4SOXsoe84PdQjnrp1znJTdwRnXypHyP2xyEfE81kWsrbJCWAXn4-G4IJUkXqaA3chYCfnxyfimjJcFhe6EGLni7zbXL9G_eJ7y6hkw62C5K4s5TnEPQo6qheZRD5Lfg-mDZELz9UW0A2mCWRcuDmLojWOqP14RUN-jyf_Sd0MrLSvtjIcOF7UifuheCyrCDU386lkyk7ORyRjU07vCz7HXCuM11TPf8HPp8pp3_5K8bNAcd9GICJS77JK3gj5TwaNenzM-k0obR9dvSHUioXCnTljUUE/p.jpeg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">SLIMMING MASSAGE</h3>
+                        
+                        <div class="body-wrapper" >
+                            <p class="card-text">Our skilled massage therapists use special techniques to improve blood flow, reduce the look of
+                                cellulite, and help your
+                                body get rid of toxins.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED370</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED470</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1665</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED2960</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uce06aab543a668b8b6f32f4ba95.previews.dropboxusercontent.com/p/thumb/ACLSIzUvv4iZtSGMycw6htpJEmfl-CsR-DgpSIFV7mwc20RPnO-oe1qMLIQ8buGT_nz7H5rRRcN_qKuLZ2APZE6dFxqi6vFmIXsIJJLD9vRuGNJmOtxJUcDgc1o-jvZvtJAE8F1A0y7C6itXseOoHwp-inqXuZuB9gB-NfA3IPPT8YhITL3i5J8cDPM53UODEC-hg7BklPSMBzt0bwWyaV3hy1_ph90OEHfslckUn977l0BORb5NtKugYXWFBPtyV5Il4cf3HveAu_cMZAAhWiFXepGPwH4gP59UKe1tBLi3SXVvGmOzXLPmcBZKMgyBBD69Ky1eHHrryDeFZxO3xdkXh3dIUGJDI0lu15MLals-TukCUvSLxtcwsL9mHacN3Qg/p.jpeg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">BALINESE MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">Our expert therapists employ traditional Balinese techniques to ease tension, improve circulation, and induce deep
+                            relaxation. With a blend of gentle stretches, acupressure, and aromatherapy, this massage promotes overall well-being.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED300</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED400</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1350</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED2400</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://ucdca5208643b0c0ed7307ec9914.previews.dropboxusercontent.com/p/thumb/ACIdeaRqSKksgdsQUltVKGb-Ia9Uppb7X8eVf7jdMWiM3qboGiHuNIUbczxPGG74YEW8UIWJ31ykduRz9dNMMwjY6DU9q_9D9ITgAtIZ5nSRGJCHK6L6iUr_jpHpNEwS-adawCubqklzhjlait6AYgtJdpxN5-hN5XLQq79oId43B_C7miVjJ86kGlQWq5ObJZyvy1GCMSFjxTlFdWdfSHsI0YqtFao0cKmGUhT1Yisw5DWEetZHS63QH2WTFNmrATR5uOxoVLEEtHgSPykecvHIDu-4kEZvNXrYMDXEK1YeqpmKn5yZYuNbIxSk2-bmYKRY7B8MYnObgRVGrcDEO4rSbTzoRk60phP2veZxvklDEIzS3haq6ht1O-FXtdkTvoI/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">LYMPHATIC MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">A specialized therapy designed to boost your body's natural detoxification process.
+                            By promoting lymphatic drainage, this massage helps reduce swelling, improve circulation, and enhance overall health.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED350</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED450</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1575  </p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED2800</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://ucbc236eacbbb3e114262f987f52.previews.dropboxusercontent.com/p/thumb/ACLSAAJpL4YTh5Ud578XeoLeyW1TmoZ3Kgzm1Bo8B_xLhpcMDn1wgW2ZfVlU_W1ochvCkpixYn0lofg-tK5233tJfbKiDSxtMGRDnZSjhwhzEHZYrMuqrYAkDWtyj-HBpJ14ue4QOwAgLeV9w6ZH7NZhCH2rblnruyYo4tQvOxZMKDi4g300qF0tUxkU2HaUgS04eUgEDnCt1sN296QqYcCHOdoC2loX-pRPu8Tsqd19pE4yj0Y9vRsJ9q_Jyw4AdpSogpdQxdWV6c_72ueK1eSSMZRVMF7LijS9le2L8W0eibSMZCEnVb9LPj_sMMt2smRZmiwhNuF5y1kz9CX3t_bteISEvRmOIqrSDQPBo4twjUQnihw1tFNSKIHZyQ6otxE/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">HOT STONE MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">With the combination of heat and massage techniques, this therapy helps to alleviate stress, reduce inflammation, and
+                            enhance overall relaxation. Experience the ultimate in relaxation and rejuvenation with our Hot Stone Massage.
+</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED440</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED540</p>
+                                </div class="row">
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1980</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED3520</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uc9808a25d11ce68dfe2f84d33f1.previews.dropboxusercontent.com/p/thumb/ACIQMGFXk-yaFaCPpptNQTotFlPvWLM_wCXlUSTVBLBLjsRScPM7dCS82RQAnctI_8hX2--WHm_PYdQZK7RJf31caQrLylMnL3VPIL6mNdjQtKsTAQZKKzOvgkf-zBvqInuZDA-Twj_d0JAc3zXXjbwdEFLcEpn-eQZZsGx63KJ0-aTvcwwFzhVpX_e9YkDSd2iLzab0l_OyZ8LK4Ms9np4rDJbEV-5C6BGHCAO8lDlljtnOdPYxp3ethNUvG1E7Ore-e9e8iWV1gQPQWMpiCeF9tti4uqVR2BZRv7nlDB3vA1rpF1p6Wf-H-TVTwNWhdMzDTLPLfhU28SaSVeMiBWLHBuRhwXIO8FHx_AWMmBLBf5xHuuv_ODuRbbsgfqe2vA7iu6FtcxteHsFXwC2mOuaW/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">MADEROTHERAPY</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">With expertly applied wooden tools, our skilled therapists provide a revitalizing experience, leaving your body looking
+                            firmer, more toned, and beautifully rejuvenated.
+                            </p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED380</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED480</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1710</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED3040</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uc3e9b224546fb0caaeba763396a.previews.dropboxusercontent.com/p/thumb/ACIDoBOTSF6575XtpHn3g9_ZVSIuza5uhEBlzMn8Tu5_614aIegsCzdSeKyeZmM0XB6gUv09690HS9qlCuTwkl-vcqk06BTY9AZuY2Km3TcYhYEP1zP8bTiE_HT36Z3rCA4Y8fAwK4o-iWoevODbLdk-SokE9QFXFXvjE2QjUNnuY3xBAfKoaWpvPVJNwZHYLv_B4SrTWsSLajkmuzJ3pYsZMTGgQNJ5xK1h4KOCfceh7hu1ZH7wqahyAJll0Pv1QyR7kVJkcrN_lKiWd1hL6b5FKs82kr4giIHZpbIvY_IsVFBsVo-_eEgthNKRK9hp-763kU-cAcj41x9h0npGh82I5b-Nwy54tut9s59APMEc8aPhH6_ZGsqNH_MnwhVor2k/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">PREGNANCY MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">Pamper yourself during this special time with our Mother-to-Be Massage. Specifically designed
+                                for expectant mothers,
+                                this gentle treatment focuses on relieving pregnancy-related discomfort.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED400</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED500</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1800</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED3200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uc35d0022923cb4a808fac728af2.previews.dropboxusercontent.com/p/thumb/ACJQhTeGsTmmzZzBWxWUfeobTA4l-mPOGVjvEEfD3sZf5HsZPy1I60j7zYtQBNaVmZsPlEZUolmXPDKujj9V5Id-gpj7VxFP9Q3_lk1QpKo9x8186IVXX8MvVMZiPN862t-3OmdKJnzq6wpXTZGe6IsOPV-DYugr-L_0k3JKS31FTeiLyuICFy8TR7X5Uj2Gw0oSShM56wu6L7JVGCGkKU_IEHsGe7AMmY3_fYHCzyRdm4Q28wzKHUv4zgDv4royIAY6dEzVBJQ4F9v8k1dI_GhR5WeCRGXdbULIXMn7USp55fPVTSqElb-paW1fKbazINILnrgdQ4052hdDFhcxrH96N2-rFx8TnAYojIg2W4JXlaQygOa1sfOqqr_IkBNUKD0/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">FACE MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">Experience the bliss of our Face Massage, a gentle and rejuvenating therapy tailored to pamper your skin and soothe your
+                            senses. We utilize delicate strokes and nourishing oils to massage your face and neck, promoting relaxation and
+                            enhancing circulation.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>45 mins</p>
+                                    <p>AED150</p>
+                                </div>
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img class="card-img" src="https://uc687dcb3af41ea19ef56c5da484.previews.dropboxusercontent.com/p/thumb/ACJP0IO96OPr2kgoH3fNRBWkHgWL0SkW_qQk-GEMTDb1rMQtxz3IXLhXP_4mBgwKZnbRZsiBmbBi9gP73r2JH6CnXaGDbtPdv25RY-y9_oiy0kNsa8QYlPhLGkNzB53cSjONJJHYjM43l_nA8hEcJ9NTx3vCceiVK0AAshC6fEWzqB92TfIgNLZtJKDL3rvX1SjUZgkjid1Na2xXoLFO9aRBWzG_5fIDwrh8iEVhaUUcDcnI1Td6VEDr1yWowWuLrJlnBdnJfU3lhwZq8jPO2i6r_ZHiBTtrVfoRq-Ez4Cw1VkvQ0gZjPyz96iEb6qoO9d4U29HI-lThubkH2u6ZbGhVNHfS4g6fLPiYd2fUBX_mZ8leY0SngrT99FN9QYTdHwk/p.jpeg" alt="Placeholder image">
+                    <div class="card-body">
+                        <h3 class="card-title">DEEP TISSUE MASSAGE</h3>
+                        <div class="body-wrapper"> 
+                            <p class="card-text">Feel the therapeutic benefits as knots and adhesions dissolve, restoring mobility and flexibility. Let the healing power
+                            of Deep Tissue Massage revive your body, leaving you refreshed and rejuvenated.</p>
+                        
+                            <div class="dur">
+                                <div class="row">
+                                    <p>60 mins</p>
+                                    <p>AED350</p>
+                                </div>
+                                <div class="row">
+                                    <p>90 mins</p>
+                                    <p>AED450</p>
+                                </div>
+                                <div class="row">
+                                    <p>5 sessions</p>
+                                    <p>AED1575</p>
+                                </div>
+                                <div class="row">
+                                    <p>10 sessions</p>
+                                    <p>AED2800</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div class="button-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="button-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+</body>
+
+</html>
